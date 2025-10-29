@@ -20,7 +20,7 @@ const nextProvider : NextAuthOptions = {
            async authorize(credentials){
            
             
-                const res = await fetch('https://linked-posts.routemisr.com/users/signin' , {
+                const res = await fetch(`${process.env.NEXT_BASE_URL}/users/signin` , {
                     method : "post",
                     body : JSON.stringify({
                         email : credentials?.email,

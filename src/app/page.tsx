@@ -38,6 +38,8 @@ export default function Home() {
     if (data.message === "success") {
       setPosts(data.posts);
       setTotalPages(data.paginationInfo.numberOfPages);
+      console.log(data);
+      
     }
   }
 

@@ -42,7 +42,9 @@ export default function Login() {
     if(data?.ok){
 
       toast.success("Sign in sucessfull" , {position : 'top-center'})
-      Route.push('/')
+      setTimeout(() => {
+    Route.push("/");
+  }, 500); // wait 0.5s f
     }else{
       toast.error("invalid Email or password" , {position : 'top-center'})
     }
