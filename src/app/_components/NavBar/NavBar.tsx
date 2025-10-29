@@ -22,7 +22,6 @@ export function NavBar() {
 
   const x = useSession()
 
-  console.log(x);
   
   function Logout(){
 
